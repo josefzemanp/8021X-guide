@@ -1,5 +1,11 @@
 
-## 1. Nainstalujte potřebné balíčky
+# Arch Linux
+
+Navod pro Arch Linux
+
+## NetworkManager GUI
+
+### 1. Nainstalujte potřebné balíčky
 
 Ujistěte se, že máte nainstalované potřebné balíčky:
 ```bash
@@ -11,7 +17,7 @@ Ujistěte se, že NetworkManager běží:
 sudo systemctl enable --now NetworkManager
 ```
 
-## 2. Zjistěte připojené rozhraní (interface)
+### 2. Zjistěte připojené rozhraní (interface)
 
 V tuto chvíli nás zajímá Ethernetové připojení...
 
@@ -31,11 +37,11 @@ nm-connection-editor
 ![w](https://github.com/josefzemanp/8021X-guide/blob/main/screen1.png?raw=true)
 
 
-## 4. Rozklikněte connection podle rozhraní (v sekci Ethernet)
+### 4. Rozklikněte connection podle rozhraní (v sekci Ethernet)
 
 ![w1](https://github.com/josefzemanp/8021X-guide/blob/main/screen5.png?raw=true)
 
-## 5. Přejděte na sekci **802.1X Security** v horním navigátoru a nastavení proveďte podle vzoru
+### 5. Přejděte na sekci **802.1X Security** v horním navigátoru a nastavení proveďte podle vzoru
 
 Authentication -> **Protected EAP (PEAP)**\
 Inner authentication -> **MSCHAPv2** \
@@ -44,7 +50,7 @@ Password -> **!heslo od školního počítače!**
 
 ![w1](https://github.com/josefzemanp/8021X-guide/blob/main/screen4.png?raw=true)
 
-## 6. Zkuste provést ping pro ověření připojení
+### 6. Zkuste provést ping pro ověření připojení
 
 ```bash
 ping 8.8.8.8
